@@ -1,0 +1,28 @@
+{
+  "siteName":"NeverSettered",
+  "listen": 8080,
+  "hosts": [
+    {
+      "hostname":"www",
+      "topDomainName":"localhost",
+      "dirPath": "D:\\codes\\HttpServer\\html\\www"
+    },
+    {
+      "hostname":"blog",
+      "topDomainName":"localhost",
+      "dirPath": "D:\\codes\\HttpServer\\html\\blog"
+    }
+  ],
+  "proxys": [
+    {
+      "topDomainName": "testpage",
+      "address":"127.0.0.1",
+      "port": 80
+    },
+    {
+      "topDomainName": "failpage",
+      "address":"127.0.0.1",
+      "port": 8081
+    }
+  ]
+}

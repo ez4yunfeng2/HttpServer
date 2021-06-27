@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更新商品</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script>
+        layui.use('upload', function(){
+            var upload = layui.upload;
+            var uploadInst = upload.render({
+                elem: '#test1'
+                ,url: '/upload/'
+                ,done: function(res){
+                    //上传完毕回调
+                }
+                ,error: function(){
+                    //请求异常回调
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item"><a href="index.html">商品</a></li>
+        <li class="layui-nav-item layui-this"><a href="update.html">添加商品</a></li>
+        <li class="layui-nav-item"><a href="">我</a></li>
+    </ul>
+    <div class="layui-container" style="padding: 10px">
+        <div class="layui-col-space6">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入商品名" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品分类</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入商品分类" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品厂家</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入商品厂家" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+                <button type="button" class="layui-btn" id="test1">
+                    <i class="layui-icon">&#xe67c;</i>上传图片
+                </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
