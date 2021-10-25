@@ -4,4 +4,6 @@
 （2）虚拟主机 \
 （2）反向代理
 
-配置请看server.json
+配置请看server.json \
+
+我承认他很垃圾（doge
