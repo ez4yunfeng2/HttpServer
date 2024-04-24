@@ -6,4 +6,3 @@
 
 配置请看server.json \
 
-我承认他很垃圾（doge
